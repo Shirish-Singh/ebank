@@ -33,4 +33,3 @@ Once the server is up, open browser and hiit below url
 ```
 http://localhost:9090/app/swagger-ui
 ```
-s](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
