@@ -1,0 +1,40 @@
+
+
+Ebank Web Application
+---------------------
+
+Requirement Gathering:
+
+Simple Bank Application providing important operations like Access,Show,Deposit,Transfer and Withdraw functionality for bank customer's.
+Filter Accounts and Show Transaction History are few other operations bank customer can perform.
+Good to have Account Creation and Account Locking.
+
+Identify Entities:
+
+Functional Entities:
+Customer - age , name , email ,mobile
+Account  - account_type,balance,iban
+Transaction - account_id, transaction_date,transaction_status
+
+
+NonFunctional Entities:
+
+CustomerConfiguration - defaultAccountType, currency
+
+API and Use Case flow:
+- /deposit - Deposit money into account , call /deposit with iban number and money , create transaction entry
+- Transfer money among same bank accounts , call /transfer fromIban toIban money , create xn entry
+- showCurrentBalance - /getCurrentBalance with Iban and account type
+- /getAccounts - return account information with filter operations
+- /showTransactionHistory - iban , account type , fromDate, toDate
+
+Notes:
+
+1. 3 Account Type - Regular Account, Savings Account and Private Loan Account
+2. Endpoint for /deposit (money,iban) //default swaving account type, /transfer, /current_balance, /account_information with account type filter, /transactionHistory filter by dates
+
+
+-- account type - checking,saving,loan
+Out of Scope:
+- Security features
+============================

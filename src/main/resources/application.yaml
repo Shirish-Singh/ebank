@@ -1,0 +1,20 @@
+
+spring:
+  application:
+    name: ebank
+    description: E-Bank Web Application
+    version: 1.0
+
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/ebank?currentSchema=public
+    username: "singh"
+    password: "singh"
+
+  swagger-ui:
+    path=/swagger-ui.html
+
+server:
+  port: 9090
+  servlet:
+    context-path: /app

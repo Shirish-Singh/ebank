@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: ebank
+    description: Ebank Web Application
+    version: 1.0
+
+
+
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5441/ebank_test
+    username: "singh"
+    password: "singh"
+
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+  jpa:
+    show-sql=true:
+    hibernate:
+      ddl-auto: create-drop
+
+  swagger-ui:
+    path=/swagger-ui.html
